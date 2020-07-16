@@ -1,7 +1,11 @@
-languageL node_js
-node_js:
-  -"4.0"
-script:
+language: node_js
+node_js: "8"
+branches:
+  only:
+  - master
+cache:
+  directories:
+    - node_modules
   
 install:
   - npm install -g firebase-tools
