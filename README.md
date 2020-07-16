@@ -11,7 +11,7 @@ The Create your Date App is where you can come and select some data that will le
 
 ## Getting Started
 
-These instructions will get you a copy of the project [Date Create ](https://github.com/habibtaghavi08/DateCreate) up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project [Date Create ](https://github.com/d-taylor6403/DateCreate) up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -27,8 +27,7 @@ What things you need:
 Open your Code editing software (example Visual Studio)
 
 Open the "Terminal" in studio
-perform a git clone https://github.com/habibtaghavi08/DateCreate.git
-```
+perform a git clone 
 
 ### Installing
 
@@ -64,6 +63,7 @@ You will be installing the following npm packages:
 * redux
 * use-react-router
 * video-react
+* firebase cli
 
 Next open robo3t and create a new "connection"
 * create a user name
