@@ -19,8 +19,8 @@ export default function Search() {
     const timestamp = Math.floor(dateTime / 1000);
     console.log(timestamp)
     const categories = ("festivals-fairs, music")
-    const [businesses, amountResults, searchParams, setSearchParams] = useBusinessSearch(2, "Mexican", 40000, "nashville,tn")
-    const [events, amounteventsResults, searcheventsParams, seteventsSearchParams] = useActivitySearch(categories, 40000, "nashville,tn", 50, timestamp)
+    const [businesses] = useBusinessSearch(2, "Mexican", 40000, "nashville,tn")
+    const [events] = useActivitySearch(categories, 40000, "nashville,tn", 50, timestamp)
 
 
     function refreshPage() {
