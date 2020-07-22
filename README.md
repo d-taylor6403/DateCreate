@@ -62,8 +62,8 @@ You will be installing the following npm packages:
 * react-router-dom
 * redux
 * use-react-router
-* video-react
-* firebase cli
+
+
 
 Next open robo3t and create a new "connection"
 * create a user name
