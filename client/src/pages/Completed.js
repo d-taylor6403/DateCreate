@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 // import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import Completed from "../components/Completed"
-import {Col, Row, Container} from "../components/Grid";
+import { Col, Row, Container } from "../components/Grid";
 // import { List, ListItem } from "../components/List";
-import {ProfileBtn, CompletedBtn, PlannedDateBtn} from "../components/Form";
+import { ProfileBtn, CompletedBtn, PlannedDateBtn } from "../components/Form";
 import "../components/Jumbotron/style.css";
 // import ReactDom from "react-dom";
 // import { Redirect, NavLink } from "react-router-dom";

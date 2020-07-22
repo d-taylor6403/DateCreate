@@ -1,6 +1,6 @@
-import React from "react"
+import React, {Component} from "react"
 import {Button, Form} from "react-bootstrap";
-//import API from "../../utils/API"
+import API from "../../utils/API"
 import "./login.css"
 const path = require("path");
 class Login extends React.Component {
@@ -43,7 +43,7 @@ class Login extends React.Component {
 
           <Form.Group controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control name="password" type="password" placeholder="Password"
+            <Form.Control name="password" type="password" placeholder="Password" type="password"
               className="input" onChange={this.handleInputChange.bind(this)} />
           </Form.Group>
           <Form.Group controlId="formBasicCheckbox">

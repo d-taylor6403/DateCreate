@@ -13,7 +13,7 @@ import {
 } from "../components/Form";
 import Form from "react-bootstrap/Form";
 import "../components/Jumbotron/style.css";
-//import {Redirect} from "react-router-dom";
+import {Redirect} from "react-router-dom";
 // import ReactDom from "react-dom";
 // import { Redirect, NavLink } from "react-router-dom";
 
