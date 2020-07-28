@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Planned from "../components/Planned"
 // import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
-import { Col, Row, Container } from "../components/Grid";
+import {Col, Row, Container} from "../components/Grid";
 // import { List, ListItem } from "../components/List";
-import { ProfileBtn, CompletedBtn, PlannedDateBtn } from "../components/Form";
+import {ProfileBtn, CompletedBtn, PlannedDateBtn} from "../components/Form";
 import "../components/Jumbotron/style.css";
 // import ReactDom from "react-dom";
 // import { Redirect, NavLink } from "react-router-dom";
@@ -18,11 +18,11 @@ class PlanDates extends Component {
     };
 
     componentDidMount() {
-API.getAllDates().then(results => {
-    this.setState({
-        dateName: results.data
-    })
-})
+        API.getAllDates().then(results => {
+            this.setState({
+                dateName: []
+            })
+        })
     }
 
 
@@ -107,7 +107,7 @@ API.getAllDates().then(results => {
 
                                 <Planned
                                     dateName={date.dateName}
-                                    dateRestaurant= {date.dateRestaurant}
+                                    dateRestaurant={date.dateRestaurant}
                                     dateEvent={date.dateEvent}
                                     dateLocation={date.dateLocation}
                                     dateRating={date.dateRating}
