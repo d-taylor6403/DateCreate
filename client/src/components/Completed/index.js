@@ -16,17 +16,17 @@ function Completed(props) {
                     <div className="col-md-3">
                         <h3> Score {props.dateRating}</h3>
                     </div>
-                <div className="col-auto - variable width content-wrap">
-                {/* <a href={props.link} className="card-text">Your review</a> */}
-                    <p className="card-text">{props.dateReview}</p>
-                </div>
+                    <div className="col-auto - variable width content-wrap">
+                        {/* <a href={props.link} className="card-text">Your review</a> */}
+                        <p className="card-text">{props.dateReview}</p>
+                    </div>
                 </div>
                 {/* <hr /> */}
                 <br />
                 <button className="card-link" onClick={() => props.removeDate(props)}>Delete</button>
             </div>
         </div>
-        
+
     )
 }
 

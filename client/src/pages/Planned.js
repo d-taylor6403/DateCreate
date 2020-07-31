@@ -14,16 +14,25 @@ import API from "../utils/API"
 class PlanDates extends Component {
 
     state = {
-        dateName: [],
+        dateName: [{
+            dateName: "Fire and Ice Dancing",
+            dateTime: "Day",
+            dateLocation: "Franklin",
+            dateBudget: "$$$$",
+            dateRestaurant: "Bella Napoli Pizzeria",
+            dateEvent: "TPAC Ballet",
+            dateRating: 10,
+            dateReview: "Best date ever",
+        }],
     };
 
     componentDidMount() {
-        API.getAllDates().then(results => {
-            this.setState({
-                dateName: []
-            })
-        })
-    }
+        this.loadPlanDates();
+    };
+
+    loadPlanDates = () => {
+
+    };
 
 
 
@@ -100,6 +109,27 @@ class PlanDates extends Component {
                             onClick={this.handlePlanClk}>Planned Dates</PlannedDateBtn>
                     </Col>
                 </Row>
+                <Row>
+                    <Col size="md-12" className="plResults">
+                        {this.state.dateName.map(date => (
+                            <div className="row" key={date._id}>
+
+                                <Planned
+                                    dateName={date.dateName}
+                                    dateRestaurant={date.dateRestaurant}
+                                    dateEvent={date.dateEvent}
+                                    dateLocation={date.dateLocation}
+                                    dateRating={date.dateRating}
+                                    dateReview={date.dateReview} />
+                            </div>
+                        ))}
+                    </Col>
+                </Row>
+
+
+
+
+
             </Container>
         );
     }

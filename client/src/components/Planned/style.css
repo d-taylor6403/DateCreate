@@ -1,0 +1,15 @@
+
+.card{
+    width: 82%;
+    margin-left: 15px;
+}
+.card-body{
+    width: 100%;
+}
+.col-md-5{
+    margin-right: 30px;
+}
+
+.col-md-3{
+    margin-right: 10px;
+}
