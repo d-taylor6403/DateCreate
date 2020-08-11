@@ -11,7 +11,7 @@ import "../components/Jumbotron/style.css";
 import API from "../utils/API"
 
 // just making a change // 
-class PlanDates extends Component {
+class PlanDates extends React.Component {
 
     state = {
         dateName: [{
