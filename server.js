@@ -19,7 +19,19 @@ app.use(routes);
 // Connect to the Mongo DB
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/datecreateDB");
+const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI, {
+      useUnifiedTopology: true,
+      useNewUrlParser: true
+    });
+    console.log('db connected..!');
+  }
+  catch (err) {
+    console.log(err);
+  }
+};
+connectDB();
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));

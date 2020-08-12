@@ -2,6 +2,6 @@
     "name": "datecreate",
     "version": 2,
     "env": {
-        "MONGODB_URI": "mongodb+srv://dannielletaylor:cakepop143@datecreate.ht8na.gcp.mongodb.net/datecreateDB?retryWrites=true&w=majority"
+        "MONGODB_URI": "@my-mongodb-uri"
     }
 }
