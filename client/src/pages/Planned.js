@@ -8,7 +8,7 @@ import {ProfileBtn, CompletedBtn, PlannedDateBtn} from "../components/Form";
 import "../components/Jumbotron/style.css";
 // import ReactDom from "react-dom";
 // import { Redirect, NavLink } from "react-router-dom";
-import API from "../utils/API"
+
 
 // just making a change // 
 class PlanDates extends React.Component {
